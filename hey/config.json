@@ -1,0 +1,14 @@
+{
+    "logo":  "https://cdn.discordapp.com/attachments/705821190119227473/831450796436226078/wp5334246.png",
+    "hex_color": "#FF0000", 
+    "community_name": "GoldenCity BOT", 
+    "role_access_id": "743199034767835235",
+    "code_length": 24,
+    "numbers_in_code": false,
+    "speudo": "Goldenyan",
+
+    "database_host": "91.121.30.53",
+    "database_user": "u3592_2pl4zPiwVE",
+    "database_password": "=4hi8ydhK5hURW^n==IxoVOz",
+    "database_base": "s3592_Golden_BDD"
+}
