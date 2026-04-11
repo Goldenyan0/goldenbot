@@ -1,34 +1,80 @@
-🤖 Golden BOT
-📌 Présentation
+<div align="center">
 
-Golden BOT est un bot Discord développé pour faciliter la gestion d’un serveur tout en ajoutant des fonctionnalités de divertissement.
+# 🤖 Golden BOT
 
-Il propose plusieurs catégories de commandes :
+![Discord](https://img.shields.io/badge/Discord-Bot-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![discord.py](https://img.shields.io/badge/discord.py-Library-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/Licence-Éducatif-green?style=for-the-badge)
 
-Modération (staff)
-Statistiques
-Musique
-Fun
-⚙️ Fonctionnalités
-🛡️ Commandes Staff
-ban <membre> → bannir un utilisateur
-kick <membre> → expulser un utilisateur
-clear <nombre> → supprimer un nombre de messages
-📊 Commandes Statistiques
-info <membre> → afficher les statistiques d’un utilisateur
-stats → afficher les statistiques du serveur
-🎵 Commandes Musique
-play <url> → jouer une musique YouTube
-skip → passer à la musique suivante
-stop → arrêter la musique et déconnecter le bot
-🎉 Commandes Fun
-nitro → simule un gain de Nitro
-meme → envoie un contenu humoristique
-🧰 Technologies utilisées
-Python
-discord.py
-API YouTube (lecture de musique)
-🧩 Structure du projet (exemple)
+**Bot Discord multifonction — Modération · Musique · Stats · Fun**
+
+</div>
+
+---
+
+## 📌 Présentation
+
+**Golden BOT** est un bot Discord développé pour faciliter la gestion d'un serveur tout en ajoutant des fonctionnalités de divertissement.
+
+Il propose quatre catégories de commandes :
+
+| Catégorie | Description |
+|-----------|-------------|
+| 🛡️ Modération | Gestion des membres et des messages |
+| 📊 Statistiques | Infos membres et serveur |
+| 🎵 Musique | Lecture YouTube en vocal |
+| 🎉 Fun | Commandes humoristiques |
+
+---
+
+## ⚙️ Fonctionnalités
+
+### 🛡️ Commandes Staff
+
+| Commande | Description |
+|----------|-------------|
+| `ban <membre>` | Bannir un utilisateur |
+| `kick <membre>` | Expulser un utilisateur |
+| `clear <nombre>` | Supprimer un nombre de messages |
+
+### 📊 Commandes Statistiques
+
+| Commande | Description |
+|----------|-------------|
+| `info <membre>` | Afficher les statistiques d'un utilisateur |
+| `stats` | Afficher les statistiques du serveur |
+
+### 🎵 Commandes Musique
+
+| Commande | Description |
+|----------|-------------|
+| `play <url>` | Jouer une musique depuis YouTube |
+| `skip` | Passer à la musique suivante |
+| `stop` | Arrêter la musique et déconnecter le bot |
+
+### 🎉 Commandes Fun
+
+| Commande | Description |
+|----------|-------------|
+| `nitro` | Simule un gain de Nitro |
+| `meme` | Envoie un contenu humoristique |
+
+---
+
+## 🧰 Technologies utilisées
+
+| Technologie | Rôle |
+|-------------|------|
+| Python | Langage principal |
+| discord.py | Librairie Discord |
+| API YouTube | Lecture de musique en vocal |
+
+---
+
+## 🧩 Structure du projet
+
+```
 golden-bot/
 │── main.py
 │── commands/
@@ -38,45 +84,85 @@ golden-bot/
 │   └── stats.py
 │── config.json
 │── requirements.txt
-▶️ Installation
-1. Cloner le projet
+```
+
+---
+
+## ▶️ Installation
+
+### 1. Cloner le projet
+
+```bash
 git clone https://github.com/ton-repo/golden-bot.git
 cd golden-bot
-2. Installer les dépendances
+```
+
+### 2. Installer les dépendances
+
+```bash
 pip install -r requirements.txt
-3. Configuration
+```
 
-Créer un fichier config.json :
+### 3. Configuration
 
+Créer un fichier `config.json` à la racine :
+
+```json
 {
   "token": "VOTRE_TOKEN_DISCORD"
 }
-🚀 Lancer le bot
+```
+
+> ⚠️ Ne jamais partager ni commit votre token Discord.
+
+### 4. Lancer le bot
+
+```bash
 python main.py
-⚠️ Permissions nécessaires
+```
 
-Le bot doit avoir :
+---
 
-Administrateur (ou permissions spécifiques) :
-Bannir des membres
-Expulser des membres
-Gérer les messages
-Accès aux salons vocaux (pour la musique)
-📉 Limites actuelles
-Système musique dépendant de YouTube (peut casser selon les API)
-Commandes basiques (pas de slash commands)
-Peu de gestion d’erreurs
-🚀 Améliorations possibles
-Ajout des slash commands
-Système de logs
-Meilleure gestion des erreurs
-Ajout de files d’attente musicale
-Dashboard web
-Permissions avancées (rôles)
-📚 Auteur
+## ⚠️ Permissions nécessaires
 
-Projet réalisé par Goldenyarn#5476
+Le bot doit disposer des permissions suivantes sur le serveur :
 
-📄 Licence
+- ✅ Bannir des membres
+- ✅ Expulser des membres
+- ✅ Gérer les messages
+- ✅ Accès aux salons vocaux (musique)
+- ✅ Lire et envoyer des messages
 
-Projet libre d’utilisation à but éducatif.
+> 💡 Une permission **Administrateur** peut être utilisée pour simplifier la configuration.
+
+---
+
+## 📉 Limites actuelles
+
+- Système musique dépendant de l'API YouTube (peut être instable)
+- Commandes préfixées uniquement (pas de slash commands)
+- Gestion des erreurs limitée
+
+---
+
+## 🚀 Améliorations possibles
+
+- [ ] Migration vers les **slash commands**
+- [ ] Système de **logs** d'actions
+- [ ] Meilleure **gestion des erreurs**
+- [ ] File d'attente musicale complète
+- [ ] Dashboard web de gestion
+- [ ] Système de permissions avancé par rôles
+
+---
+
+## 📄 Licence
+
+Ce projet est libre d'utilisation à **but éducatif**.
+
+---
+
+<div align="center">
+  <i>Projet personnel — Bot Discord multifonction</i><br/>
+  <i>Python · discord.py · YouTube API</i>
+</div>
